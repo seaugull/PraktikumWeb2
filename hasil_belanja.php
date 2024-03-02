@@ -4,7 +4,7 @@ $produk = $_POST['produk'];
 $jumlah = $_POST['jumlah'];
 $submit = $_POST['submit'];
 
-// buat total belanja//
+//hitung total belanja//
 if ($produk == 'Tv'){
     $harga = 4200000;
 }
@@ -15,6 +15,7 @@ else {
     $harga = 3800000;
 }
 
+//hasil total belanja//
 $hasil = $jumlah * $harga; 
 
 echo 'Nama Customer: ' . $customer;
